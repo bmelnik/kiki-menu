@@ -1,0 +1,53 @@
+/* Custom fonts */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Open+Sans:wght@400;500;600&family=Pinyon+Script&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --dark-bg: #1d1a18;
+    --gold-accent: #7e6444;
+  }
+
+  body {
+    font-family: 'Open Sans', sans-serif;
+  }
+}
+
+@layer utilities {
+  .font-heading {
+    font-family: 'Oswald', sans-serif;
+  }
+
+  .font-body {
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  .font-script {
+    font-family: 'Pinyon Script', cursive;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #7e6444;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #5a4531;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #5a4531;
+}
