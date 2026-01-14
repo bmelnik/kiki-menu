@@ -6,11 +6,11 @@ import Link from "next/link";
 
 // Menu data
 const tapBeer = [
-  { name: "Heineken", glass: "8.5", handle: "9.5", jug: "38.0" },
-  { name: "Goldstar", glass: "8.5", handle: "9.5", jug: "38.0" },
-  { name: "Poulaner", glass: "8.5", handle: "9.5", jug: "38.0" },
-  { name: "Shapira pale ale", glass: "7.5", handle: "8.4", jug: "34.0" },
-  { name: "Murphy's", glass: "14", handle: "", jug: "" },
+  { name: "Heineken", glass: "8.5", "1/3": "9.5", "1/2": "38.0" },
+  { name: "Goldstar", glass: "8.5", "1/3": "9.5", "1/2": "38.0" },
+  { name: "Poulaner", glass: "8.5", "1/3": "9.5", "1/2": "38.0" },
+  { name: "Shapira pale ale", glass: "7.5", "1/3": "8.4", "1/2": "34.0" },
+  { name: "Murphy's", glass: "14", "1/3": "", "1/2": "" },
 
 ];
 
@@ -256,15 +256,15 @@ function BeerWineSection() {
             {/* Tap Beer */}
             <h3 className="font-heading text-xl md:text-2xl text-[#7e6444] mb-4 tracking-wider">TAP BEER</h3>
             <div className="mb-2 flex justify-end text-xs text-gray-500 font-body space-x-6 pr-2">
-              <span className="w-10 text-right">handle</span>
-              <span className="w-10 text-right">jug</span>
+              <span className="w-10 text-right">1/3</span>
+              <span className="w-10 text-right">1/2</span>
             </div>
             {tapBeer.map((item, index) => (
               <div key={index} className="flex justify-between items-center py-1 font-body text-sm">
                 <span className="text-[#1d1a18]">{item.name}</span>
                 <div className="flex space-x-6">
-                  <span className="w-10 text-right font-medium">{item.handle}</span>
-                  <span className="w-10 text-right font-medium">{item.jug}</span>
+                  <span className="w-10 text-right font-medium">{item["1/3"]}</span>
+                  <span className="w-10 text-right font-medium">{item["1/2"]}</span>
                 </div>
               </div>
             ))}
