@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "Drinks | Restaurant | Bar | Petah Tikva - Kiki",
   description: "We have a wide selection of beers, wines and spirits. Ask about our cocktails!!",
   icons: {
-    icon: "https://ext.same-assets.com/471743189/1398194709.png",
+    icon: "/kiki-logo.png",
   },
 };
 
