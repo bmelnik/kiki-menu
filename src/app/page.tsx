@@ -125,14 +125,112 @@ const nonAlcoholic = [
   { name: "Grapefruit Soda", price: "5.0" },
 ];
 
-const spirits = [
-  { name: "Vodka", price: "12.0" },
-  { name: "Gin", price: "12.0" },
-  { name: "Rum", price: "12.0" },
-  { name: "Tequila", price: "13.0" },
-  { name: "Whiskey", price: "14.0" },
-  { name: "Bourbon", price: "14.0" },
-];
+const spirits = {
+  vodka: [
+    { name: "Absolut", price25: "12.0", price50: "22.0" },
+    { name: "Smirnoff", price25: "12.0", price50: "22.0" },
+    { name: "Finlandia", price25: "12.0", price50: "22.0" },
+    { name: "Grey Goose", price25: "14.0", price50: "26.0" },
+    { name: "Belvedere", price25: "14.0", price50: "26.0" },
+    { name: "Ketel One", price25: "13.0", price50: "24.0" },
+    { name: "Stolichnaya", price25: "12.0", price50: "22.0" },
+    { name: "Skyy", price25: "12.0", price50: "22.0" },
+    { name: "Russian Standard", price25: "12.0", price50: "22.0" },
+    { name: "Beluga", price25: "15.0", price50: "28.0" },
+  ],
+
+  gin: [
+    { name: "Bombay Sapphire", price25: "12.0", price50: "22.0" },
+    { name: "Tanqueray", price25: "12.0", price50: "22.0" },
+    { name: "Beefeater", price25: "12.0", price50: "22.0" },
+    { name: "Hendrick’s", price25: "14.0", price50: "26.0" },
+    { name: "Gordon’s", price25: "11.0", price50: "20.0" },
+    { name: "Monkey 47", price25: "16.0", price50: "30.0" },
+    { name: "The Botanist", price25: "15.0", price50: "28.0" },
+    { name: "Roku", price25: "14.0", price50: "26.0" },
+    { name: "Bulldog", price25: "13.0", price50: "24.0" },
+    { name: "Plymouth", price25: "14.0", price50: "26.0" },
+  ],
+
+  rum: [
+    { name: "Bacardi", price25: "12.0", price50: "22.0" },
+    { name: "Havana Club 3", price25: "12.0", price50: "22.0" },
+    { name: "Captain Morgan", price25: "12.0", price50: "22.0" },
+    { name: "Mount Gay", price25: "13.0", price50: "24.0" },
+    { name: "Appleton Estate", price25: "13.0", price50: "24.0" },
+    { name: "Diplomatico", price25: "15.0", price50: "28.0" },
+    { name: "Ron Zacapa 23", price25: "16.0", price50: "30.0" },
+    { name: "Flor de Caña 7", price25: "14.0", price50: "26.0" },
+    { name: "Plantation", price25: "13.0", price50: "24.0" },
+    { name: "Myers’s", price25: "12.0", price50: "22.0" },
+  ],
+
+  tequila: [
+    { name: "Jose Cuervo Especial", price25: "13.0", price50: "24.0" },
+    { name: "Don Julio Blanco", price25: "15.0", price50: "28.0" },
+    { name: "Patrón Silver", price25: "15.0", price50: "28.0" },
+    { name: "Casamigos Blanco", price25: "15.0", price50: "28.0" },
+    { name: "Herradura", price25: "14.0", price50: "26.0" },
+    { name: "Espolòn", price25: "13.0", price50: "24.0" },
+    { name: "El Jimador", price25: "13.0", price50: "24.0" },
+    { name: "1800 Silver", price25: "14.0", price50: "26.0" },
+    { name: "Clase Azul Reposado", price25: "20.0", price50: "38.0" },
+    { name: "Sauza", price25: "12.0", price50: "22.0" },
+  ],
+
+  irishWhiskey: [
+    { name: "Jameson", price25: "14.0", price50: "26.0" },
+    { name: "Bushmills Original", price25: "14.0", price50: "26.0" },
+    { name: "Redbreast 12", price25: "17.0", price50: "32.0" },
+    { name: "Tullamore D.E.W.", price25: "14.0", price50: "26.0" },
+    { name: "Powers Gold Label", price25: "14.0", price50: "26.0" },
+    { name: "Teeling Small Batch", price25: "15.0", price50: "28.0" },
+    { name: "Writer’s Tears", price25: "15.0", price50: "28.0" },
+    { name: "Green Spot", price25: "16.0", price50: "30.0" },
+    { name: "Kilbeggan", price25: "14.0", price50: "26.0" },
+    { name: "Roe & Co", price25: "14.0", price50: "26.0" },
+  ],
+
+  scotchWhiskey: [
+    { name: "Johnnie Walker Black Label", price25: "14.0", price50: "26.0" },
+    { name: "Chivas Regal 12", price25: "14.0", price50: "26.0" },
+    { name: "Ballantine’s Finest", price25: "13.0", price50: "24.0" },
+    { name: "Dewar’s White Label", price25: "13.0", price50: "24.0" },
+    { name: "Famous Grouse", price25: "13.0", price50: "24.0" },
+    { name: "Glenfiddich 12", price25: "15.0", price50: "28.0" },
+    { name: "Glenlivet 12", price25: "15.0", price50: "28.0" },
+    { name: "Macallan 12", price25: "18.0", price50: "34.0" },
+    { name: "Lagavulin 16", price25: "19.0", price50: "36.0" },
+    { name: "Laphroaig 10", price25: "17.0", price50: "32.0" },
+  ],
+
+  bourbonWhiskey: [
+    { name: "Jim Beam", price25: "14.0", price50: "26.0" },
+    { name: "Maker’s Mark", price25: "15.0", price50: "28.0" },
+    { name: "Buffalo Trace", price25: "15.0", price50: "28.0" },
+    { name: "Woodford Reserve", price25: "16.0", price50: "30.0" },
+    { name: "Wild Turkey 101", price25: "15.0", price50: "28.0" },
+    { name: "Four Roses", price25: "15.0", price50: "28.0" },
+    { name: "Bulleit Bourbon", price25: "15.0", price50: "28.0" },
+    { name: "Knob Creek", price25: "16.0", price50: "30.0" },
+    { name: "Elijah Craig", price25: "16.0", price50: "30.0" },
+    { name: "Evan Williams", price25: "14.0", price50: "26.0" },
+  ],
+
+  singleMalt: [
+    { name: "Glenfiddich 12", price25: "15.0", price50: "28.0" },
+    { name: "Glenlivet 12", price25: "15.0", price50: "28.0" },
+    { name: "Macallan 12", price25: "18.0", price50: "34.0" },
+    { name: "Balvenie 12 DoubleWood", price25: "17.0", price50: "32.0" },
+    { name: "Glenmorangie Original", price25: "15.0", price50: "28.0" },
+    { name: "Dalmore 12", price25: "17.0", price50: "32.0" },
+    { name: "Lagavulin 16", price25: "19.0", price50: "36.0" },
+    { name: "Laphroaig 10", price25: "17.0", price50: "32.0" },
+    { name: "Ardbeg 10", price25: "17.0", price50: "32.0" },
+    { name: "Highland Park 12", price25: "16.0", price50: "30.0" },
+  ],
+};
+
 
 const liqueurs = [
   { name: "Baileys", price: "10.0" },
@@ -452,16 +550,132 @@ function AlcoholicBeveragesSection() {
           <div>
             {/* Spirits */}
             <h3 className="font-heading text-xl md:text-2xl text-[#7e6444] mb-4 tracking-wider">SPIRITS</h3>
-            {spirits.map((item, index) => (
+            
+            {/* Column headers */}
+            <div className="mb-2 flex justify-end text-xs text-gray-500 font-body space-x-6 pr-2">
+              <span className="w-10 text-right">25ml</span>
+              <span className="w-12 text-right">50ml</span>
+            </div>
+            
+            {/* Vodka */}
+            <h4 className="font-heading text-lg text-[#1d1a18] mb-2 tracking-wider">Vodka</h4>
+            {spirits.vodka.map((item, index) => (
               <div key={index} className="flex justify-between items-center py-1 font-body text-sm">
                 <span className="text-[#1d1a18]">{item.name}</span>
-                <span className="font-medium">{item.price}</span>
+                <div className="flex space-x-6">
+                  <span className="w-10 text-right font-medium">{item.price25}</span>
+                  <span className="w-12 text-right font-medium">{item.price50}</span>
+                </div>
+              </div>
+            ))}
+            
+            <MenuDivider />
+            
+            {/* Gin */}
+            <h4 className="font-heading text-lg text-[#1d1a18] mb-2 tracking-wider">Gin</h4>
+            {spirits.gin.map((item, index) => (
+              <div key={index} className="flex justify-between items-center py-1 font-body text-sm">
+                <span className="text-[#1d1a18]">{item.name}</span>
+                <div className="flex space-x-6">
+                  <span className="w-10 text-right font-medium">{item.price25}</span>
+                  <span className="w-12 text-right font-medium">{item.price50}</span>
+                </div>
+              </div>
+            ))}
+            
+            <MenuDivider />
+            
+            {/* Rum */}
+            <h4 className="font-heading text-lg text-[#1d1a18] mb-2 tracking-wider">Rum</h4>
+            {spirits.rum.map((item, index) => (
+              <div key={index} className="flex justify-between items-center py-1 font-body text-sm">
+                <span className="text-[#1d1a18]">{item.name}</span>
+                <div className="flex space-x-6">
+                  <span className="w-10 text-right font-medium">{item.price25}</span>
+                  <span className="w-12 text-right font-medium">{item.price50}</span>
+                </div>
+              </div>
+            ))}
+            
+            <MenuDivider />
+            
+            {/* Tequila */}
+            <h4 className="font-heading text-lg text-[#1d1a18] mb-2 tracking-wider">Tequila</h4>
+            {spirits.tequila.map((item, index) => (
+              <div key={index} className="flex justify-between items-center py-1 font-body text-sm">
+                <span className="text-[#1d1a18]">{item.name}</span>
+                <div className="flex space-x-6">
+                  <span className="w-10 text-right font-medium">{item.price25}</span>
+                  <span className="w-12 text-right font-medium">{item.price50}</span>
+                </div>
               </div>
             ))}
           </div>
 
           {/* Right Column */}
           <div>
+            {/* Column headers */}
+            <div className="mb-2 flex justify-end text-xs text-gray-500 font-body space-x-6 pr-2">
+              <span className="w-10 text-right">25ml</span>
+              <span className="w-12 text-right">50ml</span>
+            </div>
+            
+            {/* Irish Whiskey */}
+            <h4 className="font-heading text-lg text-[#1d1a18] mb-2 tracking-wider">Irish Whiskey</h4>
+            {spirits.irishWhiskey.map((item, index) => (
+              <div key={index} className="flex justify-between items-center py-1 font-body text-sm">
+                <span className="text-[#1d1a18]">{item.name}</span>
+                <div className="flex space-x-6">
+                  <span className="w-10 text-right font-medium">{item.price25}</span>
+                  <span className="w-12 text-right font-medium">{item.price50}</span>
+                </div>
+              </div>
+            ))}
+            
+            <MenuDivider />
+            
+            {/* Scotch Whiskey */}
+            <h4 className="font-heading text-lg text-[#1d1a18] mb-2 tracking-wider">Scotch Whiskey</h4>
+            {spirits.scotchWhiskey.map((item, index) => (
+              <div key={index} className="flex justify-between items-center py-1 font-body text-sm">
+                <span className="text-[#1d1a18]">{item.name}</span>
+                <div className="flex space-x-6">
+                  <span className="w-10 text-right font-medium">{item.price25}</span>
+                  <span className="w-12 text-right font-medium">{item.price50}</span>
+                </div>
+              </div>
+            ))}
+            
+            <MenuDivider />
+            
+            {/* Bourbon Whiskey */}
+            <h4 className="font-heading text-lg text-[#1d1a18] mb-2 tracking-wider">Bourbon Whiskey</h4>
+            {spirits.bourbonWhiskey.map((item, index) => (
+              <div key={index} className="flex justify-between items-center py-1 font-body text-sm">
+                <span className="text-[#1d1a18]">{item.name}</span>
+                <div className="flex space-x-6">
+                  <span className="w-10 text-right font-medium">{item.price25}</span>
+                  <span className="w-12 text-right font-medium">{item.price50}</span>
+                </div>
+              </div>
+            ))}
+            
+            <MenuDivider />
+            
+            {/* Single Malt */}
+            <h4 className="font-heading text-lg text-[#1d1a18] mb-2 tracking-wider">Single Malt</h4>
+            {spirits.singleMalt.map((item, index) => (
+              <div key={index} className="flex justify-between items-center py-1 font-body text-sm">
+                <span className="text-[#1d1a18]">{item.name}</span>
+                <div className="flex space-x-6">
+                  <span className="w-10 text-right font-medium">{item.price25}</span>
+                  <span className="w-12 text-right font-medium">{item.price50}</span>
+                </div>
+              </div>
+            ))}
+
+            <MenuDivider />
+
             {/* Liqueurs */}
             <h3 className="font-heading text-xl md:text-2xl text-[#7e6444] mb-4 tracking-wider">LIQUEURS</h3>
             {liqueurs.map((item, index) => (
