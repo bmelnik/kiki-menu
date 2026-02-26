@@ -11,8 +11,7 @@ const tapBeer = [
   { name: "Heineken", glass: "8.5", "1/3": "9.5", "1/2": "38.0" },
   { name: "Goldstar", glass: "8.5", "1/3": "9.5", "1/2": "38.0" },
   { name: "Poulaner", glass: "8.5", "1/3": "9.5", "1/2": "38.0" },
-  { name: "Shapira pale ale", glass: "7.5", "1/3": "8.4", "1/2": "34.0" },
-  { name: "Murphy's", glass: "14", "1/3": "", "1/2": "" },
+
 
 ];
 
